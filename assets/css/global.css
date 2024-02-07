@@ -1,0 +1,132 @@
+* {
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F6F7FC;
+}
+.content{
+    padding: 1rem;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+ 
+}
+
+@media screen and (min-width: 992px) {
+    .content{
+        max-width:992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+.content h1{
+    margin: 0;
+    padding: 1rem;
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width:380px) {
+    .pokemons{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .pokemons{
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:992px) {
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.normal {
+    background-color: #77c850;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.fire {
+    background-color: #ee7f30;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.water {
+    background-color: #678fee;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pokemon .detail img{
+    max-width: 100%;
+    height: 70px;
+   
+}
+
+.pokemon .number{
+    color: black;
+    opacity: 0.3;
+    text-align: right;
+    font-size: 0.625rem;
+    
+}
+
+.pokemon .name{
+    font-size: 1em;
+    color: white;
+    margin: 0.25rem 0;
+}
+
+.pokemon .detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.pokemon .detail .types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type{
+    background-color: grey;
+    color: white;
+    padding: 0.3rem 0.4rem;
+    margin:0.25rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.625rem;
+}
+
+
+
+
+
